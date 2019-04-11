@@ -79,7 +79,9 @@ public class OracleConfiguration {
 //	
     
   
-
-	
+BaseDaoImpl has property jdbcTemplate annotated with @Autowired.
+	With this annotation you ask Spring IoC to look for an object of type JdbcTemplate in its configuration
+		and set to that property. And this is method jdbcTemplateRandomName() which tells Spring IoC how to create object of type JdbcTemplate. When you comment out that method Spring no longer knows how to create object of type JdbcTemplate for you and throws exception
+	https://stackoverflow.com/questions/52485699/unsatisfied-dependency-error-through-field-in-spring
 
 }
